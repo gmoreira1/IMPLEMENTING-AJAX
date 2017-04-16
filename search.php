@@ -4,8 +4,7 @@
 	$search = $_POST['search'];
 	$sql = "SELECT * FROM tbl_movies WHERE movies_title LIKE '%$search%' OR movies_genre LIKE '%$search%'";
 	$result = mysqli_query($connect, $sql);
-$sql2 = "SELECT * FROM tbl_comments";
-	$result2 = mysqli_query($connect, $sql2);
+
 		while($row = mysqli_fetch_array($result))
 		{
 			//echo $row;
@@ -25,10 +24,7 @@ $sql2 = "SELECT * FROM tbl_comments";
 					<input type=\"text\" name=\"title\" value=".$row["movies_title"].">
 					<textarea name=\"name\" class=\"name\" placeholder=\"Comment/Review\" rows=\"4\"></textarea><br>
 					<input type=\"submit\" class=\"small-12 small-centered\" name=\"commentSubmit\" value=\"Submit Comment\"><br></form></div><br><hr>";
-							while($row = mysqli_fetch_array($result2))
-		{
-			echo "<div class=\"results\"><h2 class=\"text-center \">".$row["movie_comment"]."</h2>";
-		}
+							
 		}
 
 
