@@ -50,7 +50,7 @@
 			//echo "<h2 class=\"text-center \">Comments/Reviews</h2>";
 			echo "<div class=\"results\"><p class=\"text-center \">".$row["movie_comment"]."</p>";
 		}
-?>
+?><?php	include('includes/footer.html'); ?>
 	</div>	
 </div>
 
