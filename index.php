@@ -85,9 +85,9 @@
 		echo "<div class=\"\"><div class=\small-12 medium-6\">{$getMovies}</div>}</div>";
 	}
 	
-	//include('includes/footer.html');
 	
-?>
+	
+?><?php	include('includes/footer.html'); ?>
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/what-input.min.js"></script>
 <script src="js/foundation.min.js"></script>
