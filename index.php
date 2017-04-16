@@ -87,7 +87,9 @@
 	
 	
 	
-?><?php	include('includes/footer.html'); ?>
+?>
+<?php include('includes/footer.html');  include('includes/nav.html');	 ?>		
+
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/what-input.min.js"></script>
 <script src="js/foundation.min.js"></script>
