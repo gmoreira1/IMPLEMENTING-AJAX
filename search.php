@@ -21,8 +21,9 @@
 			
 			echo "<p class=\"story small-12 text-center float-center small-centered columns\">".$row["movies_storyline"]."</p>";
 			echo "<form class=\"small-6\" method=\"post\" action=\"index.php\"><br>
-					<input type=\"text\" name=\"title\" value=".$row["movies_title"].">
-					<textarea name=\"name\" class=\"name\" placeholder=\"Comment/Review\" rows=\"4\"></textarea><br>
+					<input type=\"hidden\" name=\"title\" value=".$row["movies_title"].">
+					<textarea name=\"name\" class=\"name text-center\" placeholder=\"Enter Movie Name First and follow with a comment or review\" rows=\"4\"></textarea><br>
+
 					<input type=\"submit\" class=\"small-12 small-centered\" name=\"commentSubmit\" value=\"Submit Comment\"><br></form></div><br>
 					<a href=\"#\" class=\"small-centered float-center text-center\"><b>BACK TO TOP</b></a>";
 		
