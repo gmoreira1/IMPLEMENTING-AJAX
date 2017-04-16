@@ -39,7 +39,18 @@
 	}
 
 ?>
-
+<h2 class="text-center">Comments/Reviews</h2>
+<?php	
+	$connect = mysqli_connect("localhost","root","","db_review");
+	$sql2 = "SELECT * FROM tbl_comments";
+	$result2 = mysqli_query($connect, $sql2);
+	
+	while($row = mysqli_fetch_array($result2))
+		{
+			//echo "<h2 class=\"text-center \">Comments/Reviews</h2>";
+			echo "<div class=\"results\"><p class=\"text-center \">".$row["movie_comment"]."<p2>";
+		}
+?>
 	</div>	
 </div>
 
