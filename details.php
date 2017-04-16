@@ -48,7 +48,7 @@
 	while($row = mysqli_fetch_array($result2))
 		{
 			//echo "<h2 class=\"text-center \">Comments/Reviews</h2>";
-			echo "<div class=\"results\"><p class=\"text-center \">".$row["movie_comment"]."<p2>";
+			echo "<div class=\"results\"><p class=\"text-center \">".$row["movie_comment"]."</p>";
 		}
 ?>
 	</div>	
