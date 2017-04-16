@@ -12,7 +12,7 @@
 			echo "<h2 class=\"text-center \">".$row["movies_genre"]."</h2>";
 			
 			echo "<div class=\"video small-12 small-centered \"><video class=\"small-12 small-centered float-center medium-8\" id=\"myvideo\" controls><source src=\"trailers/{$row['movies_trailer']}\" type=\"video/mp4\"></source></video>
-					<div class=\"row small-12 small-centered float-center controls container_video\">
+					<div class=\"row small-12 small-centered float-center text-center controls container_video\">
 					<input type=\"image\" src=\"images/play.png\" class=\"pPause first_button\" width=\"25\" height=\"25\" alt=\"first_image\">
 					<button id=\"volDown\"><img src=\"images/volume-down.png\" class=\"button_work\" alt=\"volDown\" width=\"25\" height=\"25\"></button>
 					<button id=\"volUp\"><img src=\"images/volume-up.png\" class=\"button_work\" alt=\"volUp\" width=\"25\" height=\"25\"></button>
